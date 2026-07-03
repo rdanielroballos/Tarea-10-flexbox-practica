@@ -8,6 +8,13 @@ nav {
     background-color: blue;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
 footer {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -36,4 +43,10 @@ footer {
 .menu-principal a:hover {
     background-color: white;
     color: blue;
+}
+
+#imagenLogo {
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
 }
