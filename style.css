@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-nav {
-    background-color: blue;
+body {
+    font-family: sans-serif;
 }
 
 header {
@@ -13,21 +13,26 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
+    background-color: #1a3fa8;
 }
 
-footer {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+#imagenLogo {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .menu-principal ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 12px;
+    gap: 24px;
     list-style: none;
 }
 
@@ -35,18 +40,79 @@ footer {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     display: block;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .menu-principal a:hover {
     background-color: white;
-    color: blue;
+    color: #1a3fa8;
+    border-radius: 4px;
 }
 
-#imagenLogo {
-    width: 100px;
-    height: auto;
-    margin-right: 1rem;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 24px;
+    background-color: #f4f1eb;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    color: #444;
+}
+
+.btn-hero {
+    background-color: #1a3fa8;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+
+.seccion-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 48px 32px;
+    justify-content: center;
+}
+
+.tarjeta {
+    flex: 1 1 280px;
+    padding: 24px;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta h3 {
+    margin-bottom: 8px;
+    color: #1a3fa8;
+}
+
+footer {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 24px;
+    background-color: #1a3fa8;
+    color: white;
+    font-size: 1.3rem;
 }
